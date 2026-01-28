@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+*.lzw
+*.lzwx
+.DS_Store

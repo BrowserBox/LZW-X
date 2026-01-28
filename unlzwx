@@ -1,0 +1,6 @@
+#!/bin/bash
+# unlzwx - Decompress LZWX compressed files
+# Usage: unlzwx [options] <input> <output>
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$SCRIPT_DIR/arch.py" --mode=decompress "$@"

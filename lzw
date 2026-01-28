@@ -1,0 +1,6 @@
+#!/bin/bash
+# lzw - Compress using standard LZW algorithm
+# Usage: lzw [options] <input> <output>
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$SCRIPT_DIR/arch.py" --mode=compress --algo=lzw "$@"
