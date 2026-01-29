@@ -4,7 +4,7 @@ LZW-X is a next-generation compression algorithm that breaks the "exact-match" b
 
 ## 🚀 Why LZW-X?
 
-Classic LZW (used in GIF, ZIP, and Unix `compress`) is powerful but brittle. It relies on finding exact repeating prefixes. Change just one character, and the entire dictionary match breaks.
+Classic LZW (used in GIF, and Unix `compress`) is powerful but brittle. It relies on finding exact repeating prefixes. Change just one character, and the entire dictionary match breaks.
 
 **The LZW-X breakthrough:** Instead of giving up on a near-match, LZW-X encodes the *difference*. It uses a sophisticated **Neighbor Graph** to find dictionary entries that are "close enough" and emits a compact edit script to patch the match.
 
